@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-acid: #DFFF00;
+  --color-ink: #050505;
+  --color-paper: #F5F5F5;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --color-acid: #DFFF00;
+  --color-ink: #050505;
+  --color-paper: #F5F5F5;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+@media (pointer: fine) {
+  body, a, button, [data-cursor] {
+    cursor: none !important;
+  }
+}
+
+.selection\:bg-acid::selection {
+  background-color: var(--color-acid);
+  color: var(--color-ink);
+}
+
+.selection\:text-ink::selection {
+  color: var(--color-ink);
+}

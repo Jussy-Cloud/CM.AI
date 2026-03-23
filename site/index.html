@@ -6,6 +6,19 @@
     <title>My Google AI Studio App</title>
   </head>
   <body>
+    <div id="global-error" style="color: red; background: white; padding: 20px; display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 999999;"></div>
+    <script>
+      window.addEventListener('error', function(event) {
+        var errorDiv = document.getElementById('global-error');
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML += '<p>' + event.message + ' at ' + event.filename + ':' + event.lineno + '</p>';
+      });
+      window.addEventListener('unhandledrejection', function(event) {
+        var errorDiv = document.getElementById('global-error');
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML += '<p>Unhandled Promise Rejection: ' + event.reason + '</p>';
+      });
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

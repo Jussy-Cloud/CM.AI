@@ -1,22 +1,44 @@
 import { motion } from "motion/react";
 import React from "react";
 import { MaskText } from "../components/ui/MaskText";
+import { Cpu, PenTool, Globe, TrendingUp, Target, Layers } from "lucide-react";
 
 const services = [
   { 
+    title: "AI Onboarding & Enablement", 
+    desc: "We don’t just deploy models; we bridge the gap between AI capability and team adoption. We deploy autonomous systems that reclaim 40% of your team's bandwidth.",
+    tags: ["Workflow Mapping", "Custom Agent Deployment", "Executive Training"],
+    icon: Cpu
+  },
+  { 
     title: "Design & Identity", 
-    desc: "This is where we flex our creative muscles. From digital content and social campaigns to full-scale brand identities, we design visual systems that shape culture.",
-    tags: ["Digital Content", "Campaigns", "Brand Identity", "Video"]
+    desc: "We engineer visual systems that command attention. From digital content to full-scale brand identities, we design assets that shape culture and drive action.",
+    tags: ["Digital Content", "Campaigns", "Brand Identity", "Video"],
+    icon: PenTool
   },
   { 
-    title: "Web Dev & Platforms", 
-    desc: "Our engineers build anything you can imagine. From high-performance eCommerce platforms to custom native iOS and Android applications.",
-    tags: ["ReactJS", "Shopify", "WordPress", "Custom Builds", "Native Apps"]
+    title: "Web Platforms", 
+    desc: "We build high-performance digital infrastructure. From scalable eCommerce platforms to custom native applications, we engineer technology that converts.",
+    tags: ["ReactJS", "Shopify", "Custom Builds", "Native Apps"],
+    icon: Globe
   },
   { 
-    title: "Paid Media & Growth", 
-    desc: "Enable 'beast mode' on your content. We buy the right attention at the right price to drive conversions, leads, and global awareness.",
-    tags: ["Google Ads", "Meta", "TikTok", "LinkedIn"]
+    title: "Growth & Acquisition", 
+    desc: "We buy attention and force growth. We deploy targeted paid media strategies to drive conversions, capture leads, and scale global awareness.",
+    tags: ["Google Ads", "Meta", "TikTok", "LinkedIn"],
+    icon: TrendingUp
+  },
+  {
+    title: "Digital Strategy & Architecture",
+    desc: "Data-backed roadmaps for market dominance. We align your tech stack, creative assets, and operational workflows with high-level business objectives to ensure every digital initiative drives measurable ROI.",
+    tags: ["Market Positioning", "Stack Auditing", "ROI Forecasting"],
+    icon: Target
+  },
+  {
+    title: "Agile Project Orchestration",
+    desc: "Flawless execution from kickoff to deployment. We turn complex, chaotic workflows into streamlined delivery pipelines, ruthlessly managing timelines, resources, and scope to protect your bottom line.",
+    tags: ["Sprint Planning", "Resource Allocation", "Risk Mitigation"],
+    icon: Layers
   }
 ];
 
@@ -34,7 +56,7 @@ export function Services() {
           </MaskText>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
         {services.map((svc, i) => (
           <motion.div 
             key={svc.title}
@@ -44,6 +66,9 @@ export function Services() {
             transition={{ type: "spring", stiffness: 100, damping: 20, delay: i * 0.1 }}
             className="group border-t border-paper/20 pt-8 flex flex-col h-full"
           >
+            <div className="mb-6 text-paper/50 group-hover:text-acid transition-colors duration-300">
+              <svc.icon className="w-8 h-8" strokeWidth={1.5} />
+            </div>
             <h3 className="text-3xl lg:text-4xl font-bold tracking-tight mb-6 group-hover:text-acid transition-colors duration-300">{svc.title}</h3>
             <p className="text-paper/70 text-lg leading-relaxed mb-8 flex-grow">{svc.desc}</p>
             <div className="flex flex-wrap gap-2 mt-auto">

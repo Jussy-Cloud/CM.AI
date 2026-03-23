@@ -5,7 +5,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
   const [phase, setPhase] = useState<'idle' | 'hovering' | 'collapse' | 'reveal'>('idle');
   const [progress, setProgress] = useState(0);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number | undefined>(undefined);
   const progressRef = useRef(0);
   
   // Configuration for the orbiting dots
@@ -26,6 +26,17 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
+
+  useEffect(() => {
+    // Auto-unlock after 4 seconds if the user doesn't interact
+    const timeoutId = setTimeout(() => {
+      if (phase === 'idle' || phase === 'hovering') {
+        triggerUnlock();
+      }
+    }, 4000);
+
+    return () => clearTimeout(timeoutId);
+  }, [phase]);
 
   useEffect(() => {
     const updateProgress = () => {
@@ -82,6 +93,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
 
   return (
     <motion.div
+      data-theme="dark"
       className="fixed inset-0 z-[9999] bg-[#050505] text-white flex items-center justify-center overflow-hidden"
       initial={{ opacity: 1 }}
       animate={phase === 'reveal' ? { opacity: 0 } : { opacity: 1 }}

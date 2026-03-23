@@ -1,4 +1,5 @@
-import { animate, useInView } from "motion/react";
+import { useInView } from "motion/react";
+import { animate } from "motion";
 import React, { useRef, useEffect } from "react";
 
 export function AnimatedNumber({ value }: { value: string }) {

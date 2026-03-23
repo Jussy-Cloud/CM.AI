@@ -30,8 +30,8 @@ export function Philosophy() {
           <div className="w-screen flex-shrink-0 px-6 lg:px-12 flex flex-col justify-center">
             <div className="max-w-3xl">
               <div className="text-3xl lg:text-5xl font-medium tracking-tight leading-tight">
-                <MaskText>We engineer cultural moments that convert.</MaskText>
-                <MaskText delay={0.1}>Our systems are designed to scale, adapt, and dominate.</MaskText>
+                <MaskText>We Engineer Cultural Moments That Convert.</MaskText>
+                <MaskText delay={0.1}>Our Systems Are Designed To Scale, Adapt, And Dominate.</MaskText>
               </div>
               <motion.div 
                 initial={{ opacity: 0 }}

@@ -62,7 +62,7 @@ export function CustomCursor() {
   };
 
   return (
-    <div className={`pointer-events-none fixed inset-0 z-[9999] hidden md:block ${isDark || variant === 'discovery' || variant === 'info' ? 'text-paper' : 'text-ink'}`}>
+    <div className={`pointer-events-none fixed inset-0 z-[99999] hidden md:block ${isDark || variant === 'discovery' || variant === 'info' ? 'text-paper' : 'text-ink'}`}>
       <motion.div
         className="absolute w-2 h-2 bg-current rounded-full"
         style={{ left: dotX, top: dotY, x: "-50%", y: "-50%" }}

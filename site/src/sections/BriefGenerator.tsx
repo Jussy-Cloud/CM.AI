@@ -5,7 +5,7 @@ import { MagneticButton } from "../components/ui/MagneticButton";
 export function BriefGenerator() {
   const [goal, setGoal] = useState("Dominate a Market");
   const [timeline, setTimeline] = useState("Q3 2026");
-  const [budget, setBudget] = useState("R10k - R1m");
+  const [budget, setBudget] = useState("R10k to R1m");
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({ name: '', surname: '', email: '', company: '', message: '' });
 
@@ -64,8 +64,8 @@ export function BriefGenerator() {
                   className="appearance-none bg-transparent border-b-2 border-acid text-acid outline-none cursor-pointer text-center hover:bg-acid/10 transition-colors pr-8 py-1"
                   data-cursor="action"
                 >
-                  <option value="R10k - R1m" className="bg-ink text-paper">R10k - R1m</option>
-                  <option value="R500k - R1m" className="bg-ink text-paper">R500k - R1m</option>
+                  <option value="R10k to R1m" className="bg-ink text-paper">R10k to R1m</option>
+                  <option value="R500k to R1m" className="bg-ink text-paper">R500k to R1m</option>
                   <option value="R1m+" className="bg-ink text-paper">R1m+</option>
                   <option value="To Be Decided" className="bg-ink text-paper">To Be Decided</option>
                 </select>

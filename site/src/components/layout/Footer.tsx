@@ -3,6 +3,7 @@ import React from "react";
 import { Ollie } from "../ui/Ollie";
 import { CMLogo } from "../ui/CMLogo";
 import { FooterGlobe } from "../3d/FooterGlobe";
+import { MagneticButton } from "../ui/MagneticButton";
 
 export function Footer() {
   const links = [
@@ -22,7 +23,7 @@ export function Footer() {
   ];
 
   return (
-    <footer data-theme="dark" className="bg-ink text-paper py-12 px-6 lg:px-12 border-t border-paper/10">
+    <footer data-theme="dark" className="bg-ink text-paper py-12 px-6 lg:px-12 border-t border-paper/10 select-none">
       <motion.div 
         initial="hidden"
         whileInView="visible"
@@ -58,11 +59,15 @@ export function Footer() {
         
         <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 20 } } }}>
           <h4 className="font-mono text-xs uppercase tracking-widest text-paper/50 mb-6">Social</h4>
-          <ul className="space-y-4 font-medium">
+          <ul className="space-y-4 font-medium mb-8">
             {socials.map(social => (
               <li key={social.name}><a href={social.url} target="_blank" rel="noopener noreferrer" className="hover:text-acid transition-colors">{social.name}</a></li>
             ))}
           </ul>
+          <h4 className="font-mono text-xs uppercase tracking-widest text-paper/50 mb-6">Action</h4>
+          <MagneticButton className="bg-acid text-ink px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-paper transition-colors duration-300 inline-block">
+            Book an AI Audit
+          </MagneticButton>
         </motion.div>
       </motion.div>
       
@@ -79,7 +84,7 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-6">
           <FooterGlobe />
-          <p>AI-Forward Digital Excellence.</p>
+          <p>AI Forward Digital Excellence.</p>
         </div>
       </motion.div>
     </footer>

@@ -11,6 +11,7 @@ const caseStudies = [
   { id: 12, title: "Viral Cravings", client: "Pizza Hut", videoId: "Jb_JKczzMn0", stat: "High Engagement" },
   { id: 11, title: "Cloud Storage & Collaboration", client: "Dropbox", videoId: "7f_gKHtJrkg", stat: "Global Adoption" },
   { id: 9, title: "Global Campaign", client: "Blue Origin", videoId: "i7KeN6-yQL0" },
+  { id: 13, title: "Vehicle Lead Generation", client: "Automotive", videoId: "t73kAIYXsMU", stat: "High Conversion" },
 ];
 
 function PortfolioItem({ study, index, scrollYProgress }: { study: any, index: number, scrollYProgress: any }) {
@@ -99,7 +100,7 @@ export function Portfolio() {
         </h2>
         <div className="max-w-sm text-ink/70 font-mono text-sm uppercase tracking-widest">
           <MaskText delay={0.2}>
-            Full-spectrum digital excellence across design, paid media, web, and AI for the world's most ambitious brands.
+            We deploy full-spectrum digital excellence across design, paid media, web, and AI for the world's most ambitious brands.
           </MaskText>
         </div>
       </div>

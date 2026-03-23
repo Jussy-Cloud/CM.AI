@@ -3,7 +3,7 @@ import React from "react";
 
 export function LogoMarquee() {
   const clients = [
-    "McLaren", "Boschendal", "Vesper", "Pizza Hut", "University of Oxford", 
+    "McLaren", "Boschendal", "Vespa", "Pizza Hut", "University of Oxford", 
     "BBC", "Fila", "Jägermeister", "Daytona", "Rolls-Royce", 
     "Dropbox", "Aston Martin", "Sorbet", "MTN"
   ];

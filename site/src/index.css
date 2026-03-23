@@ -27,11 +27,67 @@ body {
   }
 }
 
+::selection {
+  background-color: var(--color-acid) !important;
+  color: var(--color-ink) !important;
+  -webkit-text-fill-color: var(--color-ink) !important;
+  transition: none !important;
+}
+
+*::selection {
+  background-color: var(--color-acid) !important;
+  color: var(--color-ink) !important;
+  -webkit-text-fill-color: var(--color-ink) !important;
+  transition: none !important;
+}
+
+::-moz-selection {
+  background-color: var(--color-acid) !important;
+  color: var(--color-ink) !important;
+}
+
+*::-moz-selection {
+  background-color: var(--color-acid) !important;
+  color: var(--color-ink) !important;
+}
+
 .selection\:bg-acid::selection {
-  background-color: var(--color-acid);
-  color: var(--color-ink);
+  background-color: var(--color-acid) !important;
+  color: var(--color-ink) !important;
+  -webkit-text-fill-color: var(--color-ink) !important;
 }
 
 .selection\:text-ink::selection {
+  color: var(--color-ink) !important;
+  -webkit-text-fill-color: var(--color-ink) !important;
+}
+
+/* Highlight text on hover when on a white/paper background */
+.bg-paper p:hover, 
+.bg-paper h1:hover, 
+.bg-paper h2:hover, 
+.bg-paper h3:hover, 
+.bg-paper h4:hover, 
+.bg-paper h5:hover, 
+.bg-paper h6:hover,
+.bg-paper li:hover,
+.bg-paper span:hover {
+  background-color: var(--color-acid);
   color: var(--color-ink);
+  border-radius: 2px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Disable highlight in dark sections like the footer */
+.bg-ink p:hover, 
+.bg-ink h1:hover, 
+.bg-ink h2:hover, 
+.bg-ink h3:hover, 
+.bg-ink h4:hover, 
+.bg-ink h5:hover, 
+.bg-ink h6:hover,
+.bg-ink li:hover,
+.bg-ink span:hover {
+  background-color: transparent;
+  color: inherit;
 }

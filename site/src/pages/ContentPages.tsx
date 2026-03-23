@@ -8,11 +8,11 @@ export function TheBrain() {
   return (
     <PageLayout 
       title="The Brain" 
-      subtitle="Data without soul is noise. Art without strategy is a hobby."
+      subtitle="Data Without Soul Is Noise. Art Without Strategy Is A Hobby."
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="text-xl leading-relaxed">
-          <p className="mb-6">We don't just "build sites" or "run ads"; we architect digital gravity—experiences so compelling that the market has no choice but to pull toward them.</p>
+          <p className="mb-6">We don't just "build sites" or "run ads"; we architect digital gravity experiences so compelling that the market has no choice but to pull toward them.</p>
           <p>Our strategic framework is built on deep market analysis, behavioral psychology, and relentless optimization. We find the edge of chaos and build your empire right on the fault line.</p>
         </div>
         <div className="bg-ink text-paper p-8 rounded-2xl">
@@ -33,21 +33,23 @@ export function TheSoul() {
   return (
     <PageLayout 
       title="The Soul" 
-      subtitle="Push the envelope until it tears. The Un-ignorable."
+      subtitle="Design That Works. Simple As That."
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="bg-ink text-paper p-8 rounded-2xl">
-          <h3 className="text-acid font-mono text-sm uppercase tracking-widest mb-8">Creative Arsenal</h3>
+          <h3 className="text-acid font-mono text-sm uppercase tracking-widest mb-8">Our Services</h3>
           <ul className="space-y-6 text-lg font-medium">
-            <li className="flex items-center gap-4"><span className="text-acid">01</span> Visual Systems & Identity</li>
-            <li className="flex items-center gap-4"><span className="text-acid">02</span> Kinetic Typography & Motion</li>
-            <li className="flex items-center gap-4"><span className="text-acid">03</span> High-Fidelity Prototyping</li>
-            <li className="flex items-center gap-4"><span className="text-acid">04</span> Immersive 3D & WebGL</li>
+            <li className="flex items-center gap-4"><span className="text-acid">01</span> Brand Identity & Visual Design</li>
+            <li className="flex items-center gap-4"><span className="text-acid">02</span> Website & Digital Design</li>
+            <li className="flex items-center gap-4"><span className="text-acid">03</span> Marketing & Campaign Assets</li>
+            <li className="flex items-center gap-4"><span className="text-acid">04</span> Presentation & Content Design</li>
           </ul>
         </div>
         <div className="text-xl leading-relaxed">
-          <p className="mb-6">Design should feel living, breathing, and slightly dangerous. It should challenge the user to interact, rather than just scroll.</p>
-          <p>We craft visual narratives that bypass the logical brain and strike directly at human emotion. Every pixel is intentional. Every interaction is a statement.</p>
+          <p className="mb-6">We create clean, effective design that helps your brand look better and perform better. No fluff, no overthinking just solid creative done right.</p>
+          <p className="mb-6">From brand identity to digital assets, everything we produce is built to be clear, consistent, and easy to use across your business.</p>
+          <p className="mb-6">Good design shouldn’t confuse people it should guide them.</p>
+          <p>We focus on clarity, consistency, and usability. Every piece of work is created to communicate your message properly and make your brand look professional across every touchpoint.</p>
         </div>
       </div>
     </PageLayout>
@@ -58,21 +60,24 @@ export function TheEngine() {
   return (
     <>
       <PageLayout 
-        title="The Engine" 
-        subtitle="Architecting Digital Gravity. The Tech Stack."
+        title="The Engine Behind the Work" 
+        subtitle="How We Build, Launch, and Scale Your Digital Presence"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="text-xl leading-relaxed">
-            <p className="mb-6">This is where the vision becomes reality. Our engineering team builds high-performance, scalable platforms that refuse to break under pressure.</p>
-            <p>From custom React/Next.js frontends to robust headless commerce backends, we deploy the exact right technology to give you an unfair advantage.</p>
+            <p className="mb-6">This is where everything comes together.</p>
+            <p className="mb-6">We build fast, reliable digital assets that are designed to perform whether it’s a website, landing page, or campaign rollout.</p>
+            <p className="mb-6">No unnecessary complexity. No over engineering. Just the right tools and processes to get things live, working properly, and delivering results.</p>
+            <p className="mb-6">We focus on speed, stability, and usability.</p>
+            <p>Everything we build is easy to manage, easy to scale, and aligned with your marketing so you’re not stuck with a system that looks good but doesn’t actually work.</p>
           </div>
           <div className="bg-ink text-paper p-8 rounded-2xl">
-            <h3 className="text-acid font-mono text-sm uppercase tracking-widest mb-8">Technical Capabilities</h3>
+            <h3 className="text-acid font-mono text-sm uppercase tracking-widest mb-8">What We Handle</h3>
             <ul className="space-y-6 text-lg font-medium">
-              <li className="flex items-center gap-4"><span className="text-acid">01</span> Headless Architecture</li>
-              <li className="flex items-center gap-4"><span className="text-acid">02</span> AI Integration & Automation</li>
-              <li className="flex items-center gap-4"><span className="text-acid">03</span> WebGL & Creative Coding</li>
-              <li className="flex items-center gap-4"><span className="text-acid">04</span> Performance Optimization</li>
+              <li className="flex items-center gap-4"><span className="text-acid">01</span> Website Build & Deployment</li>
+              <li className="flex items-center gap-4"><span className="text-acid">02</span> Landing Pages & Campaign Setup</li>
+              <li className="flex items-center gap-4"><span className="text-acid">03</span> Tracking & Analytics Integration</li>
+              <li className="flex items-center gap-4"><span className="text-acid">04</span> Ongoing Updates & Optimisation</li>
             </ul>
           </div>
         </div>
@@ -86,21 +91,21 @@ export function TheCollective() {
   return (
     <PageLayout 
       title="The Collective" 
-      subtitle="Humans. Not Resources. The minds behind the machine."
+      subtitle="We Don't Just Deploy Models. We Bridge The Gap Between AI Capability And Team Adoption."
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="bg-ink text-paper p-8 rounded-2xl">
-          <h3 className="text-acid font-mono text-sm uppercase tracking-widest mb-8">Our DNA</h3>
+          <h3 className="text-acid font-mono text-sm uppercase tracking-widest mb-8">AI Enablement</h3>
           <ul className="space-y-6 text-lg font-medium">
-            <li className="flex items-center gap-4"><span className="text-acid">01</span> Radical Candor</li>
-            <li className="flex items-center gap-4"><span className="text-acid">02</span> Relentless Curiosity</li>
-            <li className="flex items-center gap-4"><span className="text-acid">03</span> Ego-less Collaboration</li>
-            <li className="flex items-center gap-4"><span className="text-acid">04</span> Bias Toward Action</li>
+            <li className="flex items-center gap-4"><span className="text-acid">01</span> Workflow Mapping</li>
+            <li className="flex items-center gap-4"><span className="text-acid">02</span> Custom Agent Deployment</li>
+            <li className="flex items-center gap-4"><span className="text-acid">03</span> Executive Training</li>
+            <li className="flex items-center gap-4"><span className="text-acid">04</span> Operational ROI</li>
           </ul>
         </div>
         <div className="text-xl leading-relaxed">
-          <p className="mb-6">We are a syndicate of misfits, obsessives, and savants. We don't hire for "culture fit"; we hire for culture add.</p>
-          <p>Our team operates as a plug-and-play extension of your own, scaling up or down based on the exact velocity your project requires.</p>
+          <p className="mb-6">We deploy autonomous systems that reclaim 40% of your team's bandwidth. We identify high impact bottlenecks in daily operations and build a 'synthetic workforce' to handle repetitive tasks.</p>
+          <p>Our executive training onboards leadership on AI governance and strategic leverage, ensuring your team is equipped to dominate the new digital economy.</p>
         </div>
       </div>
     </PageLayout>
@@ -111,11 +116,11 @@ export function PhilosophyPage() {
   return (
     <PageLayout 
       title="The Heart" 
-      subtitle="We don't just participate. We dominate."
+      subtitle="We Don't Just Participate. We Dominate."
     >
       <div className="text-xl leading-relaxed space-y-8 max-w-4xl">
         <p>Content Merchants was born from a singular realization: the digital landscape is cluttered with noise, mediocrity, and brands that are merely participating. We exist to change that.</p>
-        <p>Our philosophy is rooted in the concept of <strong>Digital Gravity</strong>. We believe that a brand shouldn't have to shout to be heard. Instead, by architecting experiences that are fundamentally superior—strategically, creatively, and technically—we create a gravitational pull that naturally attracts the market.</p>
+        <p>Our philosophy is rooted in the concept of <strong>Digital Gravity</strong>. We believe that a brand shouldn't have to shout to be heard. Instead, by architecting experiences that are fundamentally superior strategically, creatively, and technically we create a gravitational pull that naturally attracts the market.</p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-16">
           <div className="p-8 border border-ink/10 rounded-2xl bg-white/50">
@@ -123,16 +128,16 @@ export function PhilosophyPage() {
             <p className="text-base">Data without soul is noise. We map the market, identify the fault lines, and position you exactly where you need to be before a single pixel is pushed.</p>
           </div>
           <div className="p-8 border border-ink/10 rounded-2xl bg-white/50">
-            <h3 className="bg-acid text-ink inline-block px-2 py-1 font-mono text-sm uppercase tracking-widest mb-4">02. Un-ignorable Creative</h3>
+            <h3 className="bg-acid text-ink inline-block px-2 py-1 font-mono text-sm uppercase tracking-widest mb-4">02. Unignorable Creative</h3>
             <p className="text-base">Safe is risky. We push the envelope until it tears, crafting visual narratives that bypass logic and strike directly at human emotion.</p>
           </div>
           <div className="p-8 border border-ink/10 rounded-2xl bg-white/50">
             <h3 className="bg-acid text-ink inline-block px-2 py-1 font-mono text-sm uppercase tracking-widest mb-4">03. Flawless Execution</h3>
-            <p className="text-base">Vision without execution is hallucination. Our engineering team builds high-performance, scalable platforms that refuse to break under pressure.</p>
+            <p className="text-base">Vision without execution is hallucination. Our engineering team builds high performance, scalable platforms that refuse to break under pressure.</p>
           </div>
         </div>
 
-        <p>We are a syndicate of misfits, obsessives, and savants. We operate with radical candor, relentless curiosity, and an ego-less collaboration that ensures the best idea always wins. When you partner with Content Merchants, you are not hiring an agency; you are bolting on a high-performance engine to your business.</p>
+        <p>We are a syndicate of misfits, obsessives, and savants. We operate with radical candor, relentless curiosity, and an ego less collaboration that ensures the best idea always wins. When you partner with Content Merchants, you are not hiring an agency; you are bolting on a high performance engine to your business.</p>
       </div>
     </PageLayout>
   );
@@ -144,7 +149,7 @@ export function CareersPage() {
   return (
     <PageLayout 
       title="Careers" 
-      subtitle="Join the syndicate. Explore the digital world with us."
+      subtitle="Join The Syndicate. Explore The Digital World With Us."
     >
       {submitted ? (
         <motion.div 
